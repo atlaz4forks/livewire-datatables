@@ -3,8 +3,8 @@
 namespace Mediconesystems\LivewireDatatables\Commands;
 
 use Illuminate\Support\Facades\File;
-use Livewire\Commands\FileManipulationCommand;
-use Livewire\LivewireComponentsFinder;
+use Livewire\Features\SupportConsoleCommands\Commands\FileManipulationCommand;
+// use Livewire\LivewireComponentsFinder;
 
 class MakeDatatableCommand extends FileManipulationCommand
 {
@@ -53,10 +53,10 @@ class MakeDatatableCommand extends FileManipulationCommand
         return $classPath;
     }
 
-    public function refreshComponentAutodiscovery()
-    {
-        app(LivewireComponentsFinder::class)->build();
-    }
+    // public function refreshComponentAutodiscovery()
+    // {
+    //     app(LivewireComponentsFinder::class)->build();
+    // }
 
     public function isReservedClassName($name)
     {
