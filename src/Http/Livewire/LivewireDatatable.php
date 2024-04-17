@@ -1736,7 +1736,7 @@ class LivewireDatatable extends Component
 
     public function export(string $filename = 'DatatableExport.xlsx')
     {
-        $this->forgetComputed();
+        // $this->forgetComputed();
 
         $export = new DatatableExport($this->getExportResultsSet());
         $export->setFilename($filename);
@@ -1796,7 +1796,7 @@ class LivewireDatatable extends Component
             $this->visibleSelected = $this->selected;
         }
 
-        $this->forgetComputed();
+        // $this->forgetComputed();
     }
 
     public function updatedSelected()
